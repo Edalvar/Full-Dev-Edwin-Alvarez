@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f2f1f1;
+            }
+
+            .login-container {
+                border: 2px solid rgb(13, 0, 255);
+                padding: 20px;
+                border-radius: 10px;
+                color: rgb(25, 167, 215);
+            }
+            .form-control {
+                margin: 10px 0;
+            }
+            .btn-custom {
+                background-color: rgb(44, 142, 65);
+                color: white;
+            }
+        </style>
 </head>
 <body>
-    
+    <!--
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Edwin Alvarez</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              
+            </div>
+          </div>
+        </div>
+      </nav> 
+      -->
+    <div class="login-container">
+        <h2 class="text-center">Inicio de Sesión</h2>
+        <div class="form-group">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+        </div>
+        <div class="form-group">
+            <label for="clave">Clave</label>
+            <input type="password" class="form-control" id="clave" placeholder="Clave">
+        </div>
+        <button class="btn btn-custom btn-block" onclick="login()">Entrar</button>
+    </div>
+
+    <script src="/Project-1/JS/login.js"></script>
 </body>
 </html>
